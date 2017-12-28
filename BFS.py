@@ -47,12 +47,15 @@ while queue:
     if not output.__contains__(current_node): # avoiding duplicates
         output.append(current_node)
     neighbours = graph[current_node]
-    for node in neighbours:
-        if not output.__contains__(node):
-            queue.append(node)
-            output.append(node)
+    for neighbour_node in neighbours:
+        if not output.__contains__(neighbour_node):
+            queue.append(neighbour_node)
+            output.append(neighbour_node)
 
-
+    print "current output: "
+    print output
+    print "current queue"
+    print queue
 print "ba"
 print output
 

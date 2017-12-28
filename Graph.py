@@ -20,12 +20,12 @@ class Graph(dict):
 
 # test graphs
 
-graph = Graph(['A', 'B'], [('A', 'B')]) # very simple: A----B
-graph.add_vertex('C')
-graph.add_edge( ('A', 'C') ) # now: A----B and A----C
-neighbours_of_A = graph['A'] # will return all nodes adjacent to 'A'
-print (neighbours_of_A)
-graph.delete_edge( ('A', 'C') )
-print (neighbours_of_A)
-graph.delete_vertex('B')
-print (neighbours_of_A)
+# graph = Graph(['A', 'B'], [('A', 'B')]) # very simple: A----B
+# graph.add_vertex('C')
+# graph.add_edge( ('A', 'C') ) # now: A----B and A----C
+# neighbours_of_A = graph['A'] # will return all nodes adjacent to 'A'
+# print (neighbours_of_A)
+# graph.delete_edge( ('A', 'C') )
+# print (neighbours_of_A)
+# graph.delete_vertex('B')
+# print (neighbours_of_A)
